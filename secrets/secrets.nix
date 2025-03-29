@@ -10,4 +10,5 @@ in
 with publicKeys;
 {
   "github_token.age".publicKeys = [ aciceri albertodvp ];
+  "ambrogio_bot_password.age".publicKeys = [ aciceri albertodvp ];
 }
