@@ -7,6 +7,7 @@
   perSystem =
     { config
     , pkgs
+    , lib
     , ...
     }: {
       treefmt.config = {
@@ -15,6 +16,7 @@
         programs = {
           nixpkgs-fmt.enable = true;
           typos.enable = true;
+          terraform.enable = true;
         };
       };
 
@@ -29,9 +31,10 @@
       };
 
       devShells.default = pkgs.mkShell {
-        packages = [ ];
+        packages = with pkgs; [ opentofu ragenix ];
         shellHook = ''
-          ${config.pre-commit.installationScript}
+          	  ${config.pre-commit.installationScript}
+          	  source ${lib.getExe config.agenix-shell.installationScript}
         '';
       };
     };
