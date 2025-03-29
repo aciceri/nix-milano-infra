@@ -24,6 +24,7 @@
               enable = true;
             };
           terraform.enable = true;
+          jsonfmt.enable = true;
         };
       };
 

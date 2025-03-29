@@ -7,6 +7,11 @@
   {
     "username": "aciceri",
     "role": "admin",
-    "publicKey": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIm9Sl/I+5G4g4f6iE4oCUJteP58v+wMIew9ZuLB+Gea",
+    "publicKey": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIm9Sl/I+5G4g4f6iE4oCUJteP58v+wMIew9ZuLB+Gea"
+  },
+  {
+    "username": "ambrogio-bot",
+    "role": "admin",
+    "publicKey": ""
   }
 ]
