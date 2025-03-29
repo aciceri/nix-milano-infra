@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./artwork/logo-text.jpg" alt="Nix Milano Logo" width="200"/>
+  <img src="./artwork/nix-milano.svg" alt="Nix Milano Logo" width="800"/>
 </p>
 
 # Infra

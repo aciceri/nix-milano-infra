@@ -18,8 +18,8 @@
           typos =
             {
               excludes = [
-                ".*\.png"
-                ".*\.svg"
+                "*.png"
+                "*.svg"
               ];
               enable = true;
             };
