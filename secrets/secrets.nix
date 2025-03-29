@@ -1,6 +1,6 @@
 let
-  aciceri = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIm9Sl/I+5G4g4f6iE4oCUJteP58v+wMIew9ZuLB+Gea";
+  users = builtins.fromJSON (builtins.readFile "../users.json"));
 in
 {
-  "github_token.age".publicKeys = [ aciceri ];
+  "github_token.age".publicKeys = [ users.aciceri.publicKey ];
 }

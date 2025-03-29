@@ -25,15 +25,14 @@ resource "github_organization_settings" "org_settings" {
 }
 
 resource "github_membership" "member" {
-  username = "albertodvp"
-  role     = "admin"
-}
+  for_each = {
+    for member in jsondecode(file("users.json")) :
+    member.username => member
+  }
 
-# resource "github_team_repository" "team_repo" {
-#   team_id    = github_team.my_team.id
-#   repository = github_repository.infra.name
-#   permission = "push"
-# }
+  username = each.value.username
+  role     = each.value.role
+}
 
 resource "github_repository" "infra" {
   name        = "infra"
