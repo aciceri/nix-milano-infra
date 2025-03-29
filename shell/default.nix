@@ -15,7 +15,13 @@
         flakeCheck = true;
         programs = {
           nixpkgs-fmt.enable = true;
-          typos.enable = true;
+          typos =
+            {
+              excludes = [
+                ".*\.jpg"
+              ];
+              enable = true;
+            };
           terraform.enable = true;
         };
       };
