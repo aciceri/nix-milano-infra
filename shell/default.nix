@@ -41,8 +41,9 @@
       devShells.default = pkgs.mkShell {
         packages = with pkgs; [ opentofu ragenix ];
         shellHook = ''
-          	  ${config.pre-commit.installationScript}
-          	  source ${lib.getExe config.agenix-shell.installationScript}
+          ${config.pre-commit.installationScript}
+          source ${lib.getExe config.agenix-shell.installationScript}
+          tofu init
         '';
       };
     };
