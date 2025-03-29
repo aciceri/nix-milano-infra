@@ -20,6 +20,7 @@
               excludes = [
                 "*.png"
                 "*.svg"
+                "*.jpg"
               ];
               enable = true;
             };
