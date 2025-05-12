@@ -60,5 +60,5 @@ resource "github_membership" "member" {
 resource "github_repository" "infra" {
   name        = "infra"
   description = "Infrastructure"
-  visibility  = "private"
+  visibility  = "public"
 }
