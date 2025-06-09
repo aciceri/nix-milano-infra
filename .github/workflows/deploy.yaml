@@ -8,6 +8,7 @@ on:
 jobs:
   terraform-apply:
     runs-on: ubuntu-latest
+    if: github.actor != 'ambrogio-bot'
     steps:
     - run: |
         mkdir -p /home/runner/.ssh
