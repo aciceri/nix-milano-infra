@@ -99,7 +99,7 @@ resource "github_repository_ruleset" "strict-rules" {
     pull_request {
       dismiss_stale_reviews_on_push     = true # Require re-review after new commits
       require_last_push_approval        = true # Last push must be approved by someone else
-      required_approving_review_count   = 1    # Require at least 1 approvals
+      required_approving_review_count   = 2    # Require at least 1 approvals
       required_review_thread_resolution = true # All conversations must be resolved
     }
   }
